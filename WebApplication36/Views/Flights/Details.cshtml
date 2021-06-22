@@ -1,0 +1,146 @@
+﻿@model WebApplication36.Models.Flights
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Flights</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Airways)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Airways)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FROM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FROM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SeatType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SeatType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PassengerType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PassengerType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Flight_Duration)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Flight_Duration)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FDelay)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FDelay)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Flight_Delay)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Flight_Delay)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Plane_Capacity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Plane_Capacity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Seat_Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Seat_Type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Departure_Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Departure_Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DepartureTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DepartureTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Passenger_Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Passenger_Type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumOfTickets)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumOfTickets)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Return_Flight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Return_Flight)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PlaneID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

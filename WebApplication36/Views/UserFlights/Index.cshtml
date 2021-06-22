@@ -1,0 +1,63 @@
+﻿@model IEnumerable<WebApplication36.Models.UserFlights>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@*<p>
+    @Html.ActionLink("Create New", "Create")
+</p>*@
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Seat_Type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Departure_Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DepartureTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Passenger_Type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumOfTickets)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Return_Flight)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Seat_Type)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Departure_Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DepartureTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Passenger_Type)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumOfTickets)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Return_Flight)
+        </td>
+        <td>
+            @Html.ActionLink("Home", "Index", new { id=item.UserID }) |
+            @*@Html.ActionLink("Details", "Details", new { id=item.UserID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.UserID })*@
+        </td>
+    </tr>
+}
+
+</table>
